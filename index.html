@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shruti Joshi - PhD Researcher in Neuroscience at UCSD with expertise in Olfactory Processing">
+  <title>Shruti Joshi</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" as="style">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
+  </noscript>
+  <style>
+    /* Critical CSS for above-the-fold content */
+    body {font-family:'Inter',sans-serif;background:#fff;color:#333;line-height:1.6;transition:background-color 0.3s ease, color 0.3s ease;}
+    body.dark-mode {background:#1a1a1a;color:#eee;}
+    .container {display:flex;min-height:100vh;}
+    .sidebar {width:300px;padding:2rem;position:fixed;top:0;left:0;bottom:0;background:#fff;border-right:1px solid #f0f0f0;display:flex;flex-direction:column;transition:background-color 0.3s ease, border-color 0.3s ease;}
+    body.dark-mode .sidebar {background:#1a1a1a;border-right:1px solid #333;}
+    .profile-section {display:flex;align-items:center;justify-content:center;flex-direction:column;margin-bottom:1rem;flex:0 0 auto;}
+    .profile-img {width:120px;height:120px;border-radius:50%;object-fit:cover;}
+    .header-title {text-align:center;margin-bottom:1rem;}
+    .sidebar h1 {font-weight:500;letter-spacing:-0.5px;font-size:1.5rem;margin-bottom:0.5rem;}
+    .social-icons {display:flex;gap:0.8rem;justify-content:center;margin-bottom:1rem;}
+    .social-icons a {color:#555;font-size:1.1rem;transition:color 0.3s ease;}
+    body.dark-mode .social-icons a {color:#aaa;}
+    .nav-container {flex:1 0 auto;display:flex;flex-direction:column;justify-content:center;margin:2rem 0;}
+    .nav-links {list-style:none;}
+    .nav-links li {margin-bottom:0.8rem;}
+    .nav-links a {display:block;padding:0.5rem;text-decoration:none;color:#555;font-size:0.95rem;transition:all 0.3s ease;border-left:2px solid transparent;}
+    body.dark-mode .nav-links a {color:#aaa;}
+    .main-content {margin-left:300px;padding:2rem;width:calc(100% - 300px);transition:margin-left 0.5s ease,width 0.5s ease;}
+    .theme-switch-wrapper {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      z-index: 10;
+    }
+    .theme-switch {display:inline-block;position:relative;width:50px;height:24px;}
+    .theme-switch input {opacity:0;width:0;height:0;}
+    .slider {position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;transition:.4s;border-radius:24px;}
+    .slider:before {position:absolute;content:"";height:18px;width:18px;left:3px;bottom:3px;background-color:white;transition:.4s;border-radius:50%;}
+    input:checked + .slider {background-color:#6a5acd;}
+    input:checked + .slider:before {transform:translateX(26px);}
+    .theme-icon {margin:0 6px;font-size:14px;color:#555;}
+    body.dark-mode .theme-icon {color:#aaa;}
+  </style>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    body.dark-mode {
+      background: #1a1a1a;
+      color: #eee;
+    }
+    .container {
+      display: flex;
+      min-height: 100vh;
+      position: relative;
+    }
+    .sidebar {
+      width: 300px;
+      padding: 2rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background: #fff;
+      border-right: 1px solid #f0f0f0;
+      overflow-y: hidden; /* Hide scrollbar */
+      transition: transform 0.5s ease, background-color 0.3s ease, border-color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    body.dark-mode .sidebar {
+      background: #1a1a1a;
+      border-right: 1px solid #333;
+    }
+    body.dark-mode section h2,
+    body.dark-mode .position,
+    body.dark-mode .education-item h3,
+    body.dark-mode .publication-item h3,
+    body.dark-mode .company,
+    body.dark-mode h3 {
+      color: #eee;
+    }
+    .main-content {
+      margin-left: 300px;
+      padding: 2rem;
+      width: calc(100% - 300px);
+      transition: margin-left 0.5s ease, width 0.5s ease;
+      position: relative; /* For custom scrollbar positioning */
+    }
+
+    /* Hide default scrollbar for all browsers */
+    .main-content::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* For Firefox */
+    .main-content {
+      scrollbar-width: none;
+    }
+
+    /* For IE and Edge */
+    .main-content {
+      -ms-overflow-style: none;
+    }
+
+    .header-title {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .sidebar h1 {
+      font-weight: 500;
+      letter-spacing: -0.5px;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s ease;
+    }
+    .social-icons {
+      display: flex;
+      gap: 0.8rem;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .social-icons a {
+      color: #555;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #000;
+    }
+    body.dark-mode .social-icons a {
+      color: #aaa;
+    }
+    body.dark-mode .social-icons a:hover {
+      color: #fff;
+    }
+    .profile-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      flex: 0 0 auto;
+    }
+    .nav-container {
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.2rem;
+      filter: grayscale(20%);
+      transition: filter 0.3s ease;
+    }
+    .profile-img:hover {
+      filter: grayscale(0%);
+    }
+    .intro {
+      text-align: center;
+      margin: 0 auto 1.5rem;
+      color: #444;
+      font-weight: 300;
+      font-size: 0.95rem;
+    }
+    .download-cv {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background: #f5f5f5;
+      color: #333;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      border: 1px solid #e0e0e0;
+      transition: all 0.3s ease;
+      margin-bottom: 1rem;
+    }
+    .download-cv:hover {
+      background: #e9e9e9;
+    }
+    body.dark-mode .download-cv {
+      background: #2a2a2a;
+      color: #eee;
+      border: 1px solid #444;
+    }
+    body.dark-mode .download-cv:hover {
+      background: #333;
+    }
+    .nav-links {
+      list-style: none;
+    }
+    .nav-links li {
+      margin-bottom: 0.8rem;
+    }
+    .nav-links a {
+      display: block;
+      padding: 0.5rem;
+      text-decoration: none;
+      color: #555;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      border-left: 2px solid transparent;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: #000;
+      background: #f8f8f8;
+      border-left: 2px solid #ddd;
+      padding-left: 0.8rem;
+    }
+    body.dark-mode .nav-links a {
+      color: #aaa;
+    }
+    body.dark-mode .nav-links a:hover, body.dark-mode .nav-links a.active {
+      color: #fff;
+      background: #2a2a2a;
+      border-left: 2px solid #555;
+    }
+    section {
+      margin-bottom: 4rem;
+      padding-top: 1rem;
+    }
+    section h2 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.3px;
+      color: #111;
+      position: relative;
+      padding-bottom: 0.8rem;
+      transition: color 0.3s ease;
+    }
+    section h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      width: 3rem;
+      background: #333;
+      transition: background-color 0.3s ease;
+    }
+    body.dark-mode section h2::after {
+      background: #ccc;
+    }
+    body.dark-mode .sidebar h1 {
+      color: #eee;
+    }
+    .news p {
+      margin-bottom: 0.8rem;
+      font-size: 0.95rem;
+    }
+    p {
+      color: #555;
+      margin-bottom: 0.8rem;
+      font-size: 0.95rem;
+      max-width: 650px;
+      line-height: 1.7;
+      transition: color 0.3s ease;
+    }
+    body.dark-mode p,
+    body.dark-mode .company a,
+    body.dark-mode .duration,
+    body.dark-mode .location,
+    body.dark-mode .description,
+    body.dark-mode .publication-meta,
+    body.dark-mode .education-degree,
+    body.dark-mode .education-year,
+    body.dark-mode .education-details {
+      color: #bbb;
+    }
+    .experience-list {
+      list-style: none;
+    }
+    .experience-item {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .experience-header {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 0.5rem;
+      align-items: baseline;
+    }
+    .position {
+      font-weight: 500;
+      color: #333;
+      margin-right: 0.5rem;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    .company {
+      font-weight: 400;
+      color: #555;
+      margin-right: 0.5rem;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    .company::selection {
+      background: #f0f0f0;
+    }
+    .duration {
+      font-weight: 300;
+      color: #777;
+      font-size: 0.9rem;
+    }
+    .description {
+      color: #666;
+      font-size: 0.9rem;
+      padding-left: 0.5rem;
+      border-left: 2px solid #eee;
+      transition: color 0.3s ease, border-color 0.3s ease;
+      margin-top: 0.3rem; /* Add some space between header and description */
+    }
+    body.dark-mode .description {
+      border-left: 2px solid #444;
+    }
+
+    .description a, .news a, .publication-item h3 a, .company a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(85, 85, 85, 0.4);
+      transition: border-color 0.3s ease;
+    }
+    .description a:hover, .news a:hover, .publication-item h3 a:hover, .company a:hover {
+      border-bottom: 1px solid rgba(85, 85, 85, 0.8);
+    }
+    body.dark-mode .description a,
+    body.dark-mode .news a,
+    body.dark-mode .publication-item h3 a,
+    body.dark-mode .company a {
+      color: inherit;
+      border-bottom: 1px solid rgba(187, 187, 187, 0.4);
+    }
+    body.dark-mode .description a:hover,
+    body.dark-mode .news a:hover,
+    body.dark-mode .publication-item h3 a:hover,
+    body.dark-mode .company a:hover {
+      border-bottom: 1px solid rgba(187, 187, 187, 0.8);
+    }
+
+    .description.small {
+      font-size: 0.85rem;
+      color: #777;
+    }
+    .location {
+      font-size: 0.85rem;
+      color: #888;
+      font-style: italic;
+      margin-top: 0.4rem;
+    }
+    .location i {
+      margin-right: 0.3rem;
+      color: #999;
+    }
+    .company a {
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #eaeaea;
+      transition: all 0.3s ease;
+    }
+    .company a:hover {
+      color: #000;
+      border-bottom: 1px solid #999;
+    }
+    body.dark-mode .company a,
+    body.dark-mode .description a {
+      color: #bbb;
+      border-bottom: 1px solid #444;
+    }
+    .education-item {
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .education-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.3rem;
+      flex-wrap: wrap; /* Allow wrapping */
+    }
+    .education-item h3 { /* Not used in this specific list style */
+      font-weight: 500;
+      font-size: 1.05rem;
+      color: #333;
+      margin-bottom: 0;
+    }
+    .education-year { /* Not used in this specific list style */
+      font-size: 0.9rem;
+      color: #777;
+      font-weight: 400;
+    }
+    .education-degree { /* Not used in this specific list style */
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0.7rem;
+    }
+    .education-details-container { /* Not used in this specific list style */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .education-tag { /* Not used in this specific list style */
+      background: #f0f0f0;
+      padding: 0.3rem 0.7rem;
+      border-radius: 3px;
+      font-size: 0.8rem;
+      color: #555;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    body.dark-mode .education-tag {
+      background: #2a2a2a;
+      color: #ccc;
+    }
+    .publication-item {
+      margin-bottom: 1.8rem;
+    }
+    .publication-item h3 {
+      font-weight: 500;
+      font-size: 1.05rem;
+      color: #333;
+      margin-bottom: 0.4rem;
+      transition: color 0.3s ease;
+    }
+    .publication-item h3 a {
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #eaeaea;
+      transition: all 0.3s ease;
+    }
+    .publication-item h3 a:hover {
+      color: #000;
+      border-bottom: 1px solid #999;
+    }
+    body.dark-mode .publication-item h3 a {
+      color: #ddd;
+      border-bottom: 1px solid #444;
+    }
+    body.dark-mode .publication-item h3 a:hover,
+    body.dark-mode .company a:hover,
+    body.dark-mode .description a:hover {
+      color: #fff;
+      border-bottom: 1px solid #777;
+    }
+    .publication-authors {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+    .publication-meta {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 0.3rem;
+      font-style: italic;
+    }
+    @media (max-width: 768px) {
+      .sidebar {
+        transform: translateX(-100%);
+        z-index: 1000;
+      }
+      .main-content {
+        margin-left: 0;
+        width: 100%;
+      }
+      .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1001;
+        background: #fff;
+        border: 1px solid #eee;
+        padding: 0.5rem;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      body.menu-open .sidebar {
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="theme-switch-wrapper">
+    <span class="theme-icon">☀️</span>
+    <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <span class="slider"></span>
+    </label>
+    <span class="theme-icon">🌙</span>
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="header-title">
+        <h1>Shruti Joshi</h1>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/shruti-joshi-0570b2125/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:" title="Email"><i class="fas fa-envelope"></i></a> <a href="Resume.pdf" download title="Download CV"><i class="fas fa-file-download"></i></a>
+        </div>
+      </div>
+
+      <div class="profile-section">
+        <img src="profile.jpeg" alt="Shruti Joshi Profile Picture" class="profile-img" width="120" height="120" loading="lazy" fetchpriority="high">
+      </div>
+
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="#about-news" class="nav-link" data-section="about-news">👨‍💻 About & News</a></li>
+          <li><a href="#publications" class="nav-link" data-section="publications">📝 Publications & Conferences</a></li>
+          <li><a href="#work" class="nav-link" data-section="work">💼 Work History</a></li>
+          <li><a href="#education" class="nav-link" data-section="education">🎓 Education</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <section id="about-news" class="about-news section-content">
+        <h2>👨‍💻 About Me</h2>
+        <p>Hi, I'm Shruti Joshi, a Research Scholar pursuing my PhD in Neuroscience at the University of California San Diego in the Bazhenov Lab. My research focuses on understanding olfactory processing in the brain and exploring the intersection of neuroscience and machine learning.</p>
+        <p>I'm particularly interested in how insights from neuroscience can inform machine learning algorithms and how computational approaches can advance our understanding of neural processes.</p>
+
+        <h2>📰 News & Updates</h2>
+        <div class="news">
+          <p><strong>2025:</strong> <a href="https://www.nature.com/articles/s42003-025-07879-2.epdf?sharing_token=Rs4Ec92n61EoDhU5JKTDHtRgN0jAjWel9jnR3ZoTv0M3Fl5RR2IDWHbvT6Yaifol8G9ZpC4zO8NNdd-GM_Jx1PSaYiXS6h_zsdwWCSISa3u2TtZdJLHAOq_yNA4zqZYSO-Qg9-A6ukd-FTASvvV-mDrPkR7SDc1iUPoBz30kRcY%3D" target="_blank">Paper</a> officially published in Communications Biology</p>
+          <p><strong>2023:</strong> Presented work at NeurIPS Workshop - Associative Memory & Hopfield Networks.</p>
+          <p><strong>2022:</strong> Presented at Society for Neuroscience Meeting.</p>
+          <p><strong>2021:</strong> Presented at Annual Computational Neuroscience Meeting.</p>
+          <p><strong>2020:</strong> Started PhD research at Bazhenov Lab, UCSD.</p>
+          <p><strong>2019:</strong> Completed work as Research Assistant at IISER Pune.</p>
+          <p><strong>2018:</strong> Completed thesis work at Indian Institute of Science (IISc).</p>
+          <p><strong>2018:</strong> Completed B.E. at BITS Pilani, Goa Campus.</p>
+        </div>
+      </section>
+
+      <section id="publications" class="publications section-content">
+        <h2>Journal Publications</h2>
+        <div class="publication-item">
+          <h3><a href="https://www.nature.com/articles/s42003-025-07879-2" target="_blank">Olfactory receptor neurons generate multiple response motifs, increasing coding space dimensionality</a></h3>
+          <p class="publication-authors">Brian Kim, Seth Haney, Ana P Milan, Shruti Joshi, Zane Aldworth, Nikolai Rulkov, Alexander T Kim, Maxim Bazhenov, Mark A Stopfer</p>
+          <p class="publication-meta">Communications Biology, 2025</p>
+        </div>
+
+        <div class="publication-item">
+          <h3><a href="https://elifesciences.org/articles/79152" target="_blank">Plasticity in inhibitory networks improves pattern separation in early olfactory processing</a></h3>
+          <p class="publication-authors">Shruti Joshi, Seth Haney, Zhenyu Wang, Fernando Locatelli, Hong Lei, Yu Cao, Brian Smith, Maxim Bazhenov</p>
+          <p class="publication-meta">eLife, 2023</p>
+        </div>
+
+        <h2>Conference Proceedings</h2>
+        <div class="publication-item">
+          <h3><a href="https://openreview.net/forum?id=O5Se9wGYbh" target="_blank">Modern Hopfield Network with Local Learning Rules for Class Generalization</a></h3>
+          <p class="publication-meta">NeurIPS Workshop - Associative Memory & Hopfield Networks • December 15, 2023</p>
+        </div>
+
+        <div class="publication-item">
+          <h3><a href="https://2024.ccneuro.org/poster/?id=536" target="_blank">Inferring Network Structure from Neural Activity in a Biologically-Constrained Model of the Insect Olfactory System</a></h3>
+          <p class="publication-meta">Cognitive Computational Science (CCN) 2024 • August 9, 2024</p>
+        </div>
+
+        <div class="publication-item">
+          <h3>Inferring Network Structure from Neural Activity in a Biologically-Constrained Model of the Insect Olfactory System</h3>
+          <p class="publication-meta">Society for Neuroscience Meeting 2024 • October 7, 2024</p>
+        </div>
+
+        <div class="publication-item">
+          <h3>Olfactory receptor neurons generate multiple response motifs, increasing coding space dimensionality</h3>
+          <p class="publication-meta">Society for Neuroscience 2022 • November 12, 2022</p>
+        </div>
+
+        <div class="publication-item">
+          <h3>Learning in the inhibitory network of the honeybee antennal lobe</h3>
+          <p class="publication-meta">Society for Neuroscience 2022 • November 12, 2022</p>
+        </div>
+
+        <div class="publication-item">
+          <h3>Learning synaptic properties from neural activity in a recurrent neural network model of insect olfaction</h3>
+          <p class="publication-meta">International Conference on Mathematical Neuroscience (ICMNS) 2025 • July 17, 2025</p>
+        </div>
+
+        <div class="publication-item">
+          <h3>Uncovering associative learning-induced changes in locust olfaction through in-vivo neural recordings and machine learning</h3>
+          <p class="publication-meta">International Congress of Neuroethology (ICN) 2024 • July 28, 2024</p>
+        </div>
+
+        <div class="publication-item">
+          <h3><a href="https://www.cnsorg.org/cns-2021" target="_blank">Learning in the inhibitory network of the honeybee antennal lobe</a></h3>
+          <p class="publication-meta">30th Annual Computational Neuroscience Meeting CNS*2021 • July 3, 2021</p>
+        </div>
+      </section>
+
+      <section id="work" class="work-history section-content">
+        <h2>💼 Work History</h2>
+        <ul class="experience-list">
+          <li>
+             <div class="experience-item">
+              <div class="experience-header">
+                <span class="position">Graduate Student Researcher, Bazhlab</span>
+                <span class="company"><a href="https://ucsd.edu" target="_blank">University of California San Diego</a></span>
+                <span class="duration">Jan 2020 - Present · 5 yrs 4 mos</span>
+              </div>
+              <p class="description">Research focused on olfactory processing and computational neuroscience. Skills: Artificial Intelligence (AI), Empirical Research.</p>
+              <p class="location"><i class="fas fa-map-marker-alt"></i> San Diego</p>
+             </div>
+          </li>
+          <li>
+            <div class="experience-item">
+              <div class="experience-header">
+                <span class="position">Research Assistant</span>
+                <span class="company"><a href="https://www.iiserpune.ac.in/" target="_blank">Indian Institute of Science Education and Research (IISER), Pune</a></span>
+                <span class="duration">Aug 2018 - Jun 2019 · 11 mos</span>
+              </div>
+              <p class="description">Skills: Empirical Research, PyTorch.</p>
+              <p class="location"><i class="fas fa-map-marker-alt"></i> Pune Area, India</p>
+            </div>
+          </li>
+          <li>
+            <div class="experience-item">
+              <div class="experience-header">
+                <span class="position">Thesis Student</span>
+                <span class="company"><a href="https://iisc.ac.in/" target="_blank">Indian Institute of Science (IISc)</a></span>
+                <span class="duration">Jan 2018 - Jul 2018 · 7 mos</span>
+              </div>
+              <p class="description">Completed thesis research focusing on experimental methods for studying neural circuits. Investigated neural processing mechanisms and analyzed neurophysiological data. Skills: Empirical Research.</p>
+              <p class="location"><i class="fas fa-map-marker-alt"></i> Bengaluru Area, India</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="education" class="education section-content">
+        <h2>🎓 Education</h2>
+        <ul class="experience-list">
+          <li>
+            <div class="experience-item">
+              <div class="experience-header">
+                <span class="position">PhD in Computational Neuroscience</span>
+                <span class="company"><a href="https://ucsd.edu" target="_blank">University of California San Diego (UCSD)</a></span>
+                <span class="duration">2020 - Present</span>
+              </div>
+              <p class="description">Pursuing research in the Bazhenov Lab focusing on olfactory processing and computational neuroscience. Skills: Artificial Intelligence (AI).</p>
+            </div>
+          </li>
+          <li>
+            <div class="experience-item">
+              <div class="experience-header">
+                <span class="position">Master of Science (MS), Electrical and Computer Engineering</span>
+                <span class="company"><a href="https://ucsd.edu" target="_blank">University of California San Diego (UCSD)</a></span>
+                <span class="duration">2019 - 2021</span>
+              </div>
+              <p class="description">Focused on computational neuroscience and machine learning applications. Skills: Empirical Research.</p>
+            </div>
+          </li>
+          <li>
+            <div class="experience-item">
+              <div class="experience-header">
+                <span class="position">Bachelor of Engineering (B.E.), Electronics and Instrumentation</span>
+                <span class="company"><a href="https://www.bits-pilani.ac.in/Goa/" target="_blank">Birla Institute of Technology and Science, Pilani - Goa Campus</a></span>
+                <span class="duration">2014 - 2018</span>
+              </div>
+              <p class="description">Skills: Empirical Research.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <div class="menu-toggle" id="menuToggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <script defer>
+    // Get all sections and navigation links
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.nav-links a');
+      const toggleSwitch = document.querySelector('#checkbox');
+
+      // Check for saved theme preference or prefer-color-scheme
+      const currentTheme = localStorage.getItem('theme');
+      const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+      // If user has a saved preference, use that
+      if (currentTheme) {
+        document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+        toggleSwitch.checked = currentTheme === 'dark';
+      }
+      // Otherwise, respect the system preference
+      else if (prefersDarkScheme.matches) {
+        document.body.classList.add('dark-mode');
+        toggleSwitch.checked = true;
+        localStorage.setItem('theme', 'dark');
+      }
+
+      // Theme switch event listener
+      toggleSwitch.addEventListener('change', function(e) {
+        if (e.target.checked) {
+          document.body.classList.add('dark-mode');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          document.body.classList.remove('dark-mode');
+          localStorage.setItem('theme', 'light');
+        }
+      });
+
+      // Function to show only the active section
+      function showActiveSection(sectionId) {
+        // Hide all sections
+        document.querySelectorAll('.section-content').forEach(section => {
+          section.style.display = 'none';
+        });
+
+        // Show only the selected section
+        const activeSection = document.querySelector(sectionId);
+        if (activeSection) {
+          activeSection.style.display = 'block';
+        }
+
+        // Update active class on navigation links
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === sectionId) {
+            link.classList.add('active');
+          }
+        });
+      }
+
+      // Show the about section by default when page loads
+      showActiveSection('#about-news');
+
+      // Smooth scrolling and section switching for nav links
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          showActiveSection(targetId);
+
+          // Close menu on mobile after clicking
+          if (window.innerWidth <= 768) {
+            document.body.classList.remove('menu-open');
+          }
+        });
+      });
+
+      // Toggle mobile menu
+      const menuToggle = document.getElementById('menuToggle');
+      if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+          document.body.classList.toggle('menu-open');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
